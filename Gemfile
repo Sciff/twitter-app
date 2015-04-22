@@ -17,6 +17,8 @@ gem 'devise'
 gem 'mysql2'
 gem 'pundit'
 gem 'slim-rails'
+gem 'therubyracer', platforms: :ruby
+
 group :development do
   gem 'better_errors'
   gem 'capistrano', '~> 2.15.0'
