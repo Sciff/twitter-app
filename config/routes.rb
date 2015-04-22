@@ -1,4 +1,4 @@
-Rails.application.routes.draw do
+TwitterApp::Application.routes.draw do
   devise_for :users
 
   root 'home#index'
