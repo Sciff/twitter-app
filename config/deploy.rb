@@ -62,7 +62,7 @@ role :app,            deploy_server
 role :db,             deploy_server, :primary => true
 
 # Следующие строки необходимы, т.к. ваш проект использует rvm.
-set :rvm_ruby_string, "2.2.2"
+set :rvm_ruby_string, "2.2.0"
 set :rake,            "rvm use #{rvm_ruby_string} do bundle exec rake"
 set :bundle_cmd,      "rvm use #{rvm_ruby_string} do bundle"
 
@@ -78,7 +78,7 @@ set :scm,             :git
 # set :repository,      "ssh://#{user}@#{deploy_server}/home/#{user}/git/#{application}.git"
 
 ## Если ваш репозиторий в GitHub, используйте такую конфигурацию
-set :repository,    "git@github.com:Sciff/twitter-app.git"
+set :repository,    "https://github.com/Sciff/twitter-app.git"
 
 ## --- Ниже этого места ничего менять скорее всего не нужно ---
 
